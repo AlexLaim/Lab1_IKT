@@ -18,11 +18,10 @@ namespace Lab1
         public static string filename = Directory.GetCurrentDirectory() + "\\data.txt";
         public static List<string[]> rows = new List<string[]>();
         public static List<string[]> finded = new List<string[]>();
-        public static bool isNeedToFind = false;
+        public static bool ToFind = false;
         public static bool edit = false;
         public static string Item;
         public static int RemoveItem;
-        public static bool isSure = false;
         public FormOrganaizer()
         {           
             InitializeComponent();
@@ -58,7 +57,7 @@ namespace Lab1
         }
         private void FormOrganaizer_Activated(object sender, EventArgs e)
         {
-            if (isNeedToFind)
+            if (ToFind)
                RefreshList(finded);
             else
                 RefreshList(rows);

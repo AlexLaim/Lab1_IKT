@@ -30,7 +30,7 @@ namespace Lab1
                     FormOrganaizer.finded.Add(row);
                 }
             }
-            FormOrganaizer.isNeedToFind = true;
+            FormOrganaizer.ToFind = true;
             this.Close();
         }
     }
